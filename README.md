@@ -64,30 +64,41 @@ En la captura se ve el uso del comando mount con parámetros adicionales.
 
 ![Imagen6](imgs/Imagen7.png)
 
-Como se puede observar la carpeta ya cuenta con todos los permisos. 
+Como se puede observar la carpeta ya cuenta con todos los permisos, y la USB está montada de nuevo. 
 
 ![Imagen8](imgs/Imagen8.png)
 
 ![Imagen9](imgs/Imagen9.png)
 
 ## Paso 3 Enlistar la información de los dispositivos de bloque conectados aunque no estén montados en terminal.
-Para el paso 3 se vuelve a desplegar los archivos de bloque, y se mostrarán los archivos incluso los de aquellas unidades que no estén montadas. 
+Para el paso 3 se vuelve a desplegar los dispositivos de bloque con el comando lsblk, y se mostrará su información incluso de aquellas unidades que no estén montadas. 
+
+En la captura se puede observar el bloque /dev/sdb aunque no esté montado. 
 
 ![Imagen7](imgs/Imagen3.png) 
-Se puede observar el bloque /dev/sdb aunque no esté montado. 
 
 ## Paso 4 Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.
-Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
+Para este paso,  utilizamos el comando 
+```bash
+fdisk -l /dev/sda
+```
+, donde se le agrega una -l porque de no hacerlo activaríamos el asistende por consola de particiones, y nosotros solo queremos enlistar la información de las particiones. Además se agrega el dispositivo del cual queremos su información, en este caso es el disco duro principal donde está el sistema operativo. 
+
+En la captura se observá la información desplegada por el comando. 
 
 ![Imagen10](imgs/Imagen4.png)
 
 ## Paso 5 Conectar una memoria usb y mostrar su tabla de particiones en terminal. (Hacer respaldo antes porque se borrará toda la información dentro de la usb en pasos posteriores)
-Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el archivo de bloques de la USB, para poder observar sus particiones. 
+Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el dispositivo USB, para poder observar sus particiones. 
 
 ![Imagen11](imgs/Imagen10.png)
 
 ## Paso 6 (Borrar todas las particiones de la usb en terminal.
-Para realizar el paso 6, utilizaremos ahora el comando fdisk sin el -l, pues así esta herramienta nos permitirá modificar las particiones de la USB. 
+Para realizar el paso 6, utilizaremos ahora el comando fdisk sin el -l:
+```bash
+sudo fdisk /dev/sdb
+```
+pues así esta herramienta nos permitirá modificar las particiones de la USB. 
 Una vez en la herramienta, deberemos presionar la tecla d, y después el número de partición que queremos eliminar. En este caso repetiremos el proceso 4 veces, pues queremos eliminar las 4 particiones.
 
 ![Imagen11](imgs/Imagen11.png)
