@@ -1,5 +1,5 @@
 # SistemasOperativosII-P1 Partición por consola de una memoria USB
-Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particionar una USB.
+Repositorio de la práctica 1 de Sistemas Operativos II, acerca de cómo particionar una USB.
 
 ## Paso 1 Diferencias entre hda, sda y vda. ¿Qué significa la letra y el número al final de los identificadores?
 Las letras sd, hd y vd indican el tipo de puerto que está utilizando la unidad de almacenamiento:
@@ -10,7 +10,7 @@ HD: Se refiere a dispositivos que utilizan el estándar ATA, originalmente conoc
 
 Vda: Se refiere a unidades que están usando la paravirtualización, la cual es una técnica que permite a la emulación del sistema operativo, no simular al 100% el dispositivo de almacenamiento como si se tratara de una unidad de hardware real, lo cual permite una comunicación más directa y por lo tanto más rápida.
 
-Respecto a las letras después de las letras, éstas se refieren al orden que llevan estas unidades, es decir sda, será el primer dispositivo tipo sd, sdb el segundo dispositivo conectado tipo sd, etc.
+Respecto a las letras 'a','b','c'.. etc, éstas se refieren al orden que llevan estas unidades, es decir sda, será el primer dispositivo conectado (maestro) tipo sd, sdb el segundo dispositivo conectado tipo sd, etc.
 
 Y, por último, el número al final se refiere al número de partición de esa unidad.
 
@@ -78,13 +78,13 @@ En la captura se puede observar el bloque /dev/sdb aunque no esté montado.
 ![Imagen7](imgs/Imagen3.png) 
 
 ## Paso 4 Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.
-Para este paso,  utilizamos el comando 
+Para este paso, utilizamos el comando 
 ```bash
 fdisk -l /dev/sda
 ```
-, donde se le agrega una -l porque de no hacerlo activaríamos el asistende por consola de particiones, y nosotros solo queremos enlistar la información de las particiones. Además se agrega el dispositivo del cual queremos su información, en este caso es el disco duro principal donde está el sistema operativo. 
+donde se le agrega una -l porque de no hacerlo activaríamos el asistente por consola de particiones, y nosotros solo queremos enlistar la información de las particiones. Además se agrega el dispositivo del cual queremos su información, en este caso es el disco duro principal donde está el sistema operativo. 
 
-En la captura se observá la información desplegada por el comando. 
+En la captura se observa la información desplegada por el comando. 
 
 ![Imagen10](imgs/Imagen4.png)
 
