@@ -24,8 +24,10 @@ Uso del comando mount, el cual es necesario ejecutar con sudo pues se necesitan 
 Al utilizar el comando mount de esta manera, la carpeta no será creada con todos los permisos disponibles para el usuario. Para poder obtener todos los permisos, hay que desmontar la USB, se debe utilizar el umask, y volver a ejecutar el comando mount con parámetros adicionales. 
 
 ![Imagen6](imgs/Imagen6.png)
-![Imagen7](imgs/Imagen7.png)
 Uso del comando mount con parámetros adicionales, como se puede observar la carpeta ya cuenta con todos los permisos. 
+![Imagen7](imgs/Imagen7.png)
+
+
 ## Paso 3
 
 ![Imagen8](imgs/Imagen8.png)
