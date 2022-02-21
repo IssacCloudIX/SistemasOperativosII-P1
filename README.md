@@ -29,8 +29,13 @@ Uso del comando mount con parámetros adicionales, como se puede observar la car
 
 
 ## Paso 3
+Cambiar aquí !
 
 ![Imagen8](imgs/Imagen8.png)
+
+## Paso 4
+Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
+
 ![Imagen9](imgs/Imagen9.png)
 ![Imagen10](imgs/Imagen10.png)
 ![Imagen11](imgs/Imagen11.png)
