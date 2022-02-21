@@ -25,7 +25,8 @@ Al utilizar el comando mount de esta manera, la carpeta no será creada con todo
 
 ![Imagen6](imgs/Imagen7.png)
 Uso del comando mount con parámetros adicionales, como se puede observar la carpeta ya cuenta con todos los permisos. 
-![Imagen7](imgs/Imagen8.png)
+![Imagen7](imgs/Imagen4.png)
+Se puede observar el bloque /dev/sdb aunque no esté montado. 
 
 
 ## Paso 3
