@@ -4,10 +4,15 @@ Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particio
 
 ## Paso 1 Diferences entre hda, sda y vda. ¿Qué significa la letra y el número al final de los identificadores?
 Las letras sd, hd y vd indican el tipo de puerto que está utilizando la unidad de almacenamiento:
+
 SD: Se refiere a los dispositivos que están utilizando el puerto USB, o discos duros que utilizan el puerto SATA. También se puede referir a dispositivos que utilizan la conexión SCSI, un estándar de transferencia de datos utilizado en RAIDs pero que ha sido reemplazado en gran medida por el puerto SATA.
+
 HD: Se refiere a dispositivos que utilizan el estándar ATA, originalmente conocido como IDE. De igual manera, ha sido reemplazado por el puerto Serial ATA.
+
 Vda: Se refiere a unidades que están usando la paravirtualización, la cual es una técnica que permite a la emulación del sistema operativo, no simular al 100% el dispositivo de almacenamiento como si se tratara de una unidad de hardware real, lo cual permite una comunicación más directa y por lo tanto más rápida.
+
 Respecto a las letras después de las letras, éstas se refieren al orden que llevan estas unidades, es decir sda, será el primer dispositivo tipo sd, sdb el segundo dispositivo conectado tipo sd, etc.
+
 Y, por último, el número al final se refiere al número de partición de esa unidad.
 
 ## Paso 2 ¿Cómo montar y desmontar una usb en el sistema por terminal?
