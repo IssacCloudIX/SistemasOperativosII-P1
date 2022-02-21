@@ -1,7 +1,7 @@
 # SistemasOperativosII-P1
 Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particionar una USB.
 
-## Paso 2
+## Paso 2 ¿Cómo montar y desmontar una usb en el sistema por terminal?
 Para montar y desmontar una usb, se utilizan los comandos mount y umount respectivamente. 
 Al conectar nuestra usb ubuntu la monta automáticamente. En la imagen se puede observar la salida del comando lsblk, donde se ve que se encuentra montado el archivo sdb. 
 
@@ -31,23 +31,23 @@ Uso del comando mount con parámetros adicionales, como se puede observar la car
 
 ![Imagen9](imgs/Imagen9.png)
 
-## Paso 3 Puede cambiar. 
+## Paso 3 Enlistar la información de los dispositivos de bloque conectados aunque no estén montados en terminal.
 Para el paso 3 se vuelve a desplegar los archivos de bloque, y se mostrarán los archivos incluso los de aquellas unidades que no estén montadas. 
 
 ![Imagen7](imgs/Imagen3.png) 
 Se puede observar el bloque /dev/sdb aunque no esté montado. 
 
-## Paso 4
+## Paso 4 Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.
 Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
 
 ![Imagen10](imgs/Imagen4.png)
 
-## Paso 5
+## Paso 5 Conectar una memoria usb y mostrar su tabla de particiones en terminal. (Hacer respaldo antes porque se borrará toda la información dentro de la usb en pasos posteriores)
 Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el archivo de bloques de la USB, para poder observar sus particiones. 
 
 ![Imagen11](imgs/Imagen10.png)
 
-## Paso 6
+## Paso 6 (Borrar todas las particiones de la usb en terminal.
 Para realizar el paso 6, utilizaremos ahora el comando fdisk sin el -l, pues así esta herramienta nos permitirá modificar las particiones de la USB. 
 Una vez en la herramienta, deberemos presionar la tecla d, y después el número de partición que queremos eliminar. En este caso repetiremos el proceso 4 veces, pues queremos eliminar las 4 particiones.
 
@@ -61,7 +61,7 @@ Se muestra la salida del comando fdisk -l después de borrar las particiones, y 
 
 ![Imagen13](imgs/Imagen13.png)
 
-## Paso 7
+## Paso 7 Crear en el usb tres particiones físicas y una extendida en terminal.
 Para este paso, de igual manera utilizaremos el comando fdisk. Ahora en lugar de utilizar la letra d, utilizaremos la letra n, la cual preguntará que tipo de partición queremos crear. Para crear una primaria (física) se debe escribir la letra p, para crear una extendida se debe escribir una letra e. Después nos preguntará el número de partición, los cuales irán del 1 al 4. Después preguntará el sector donde comenzará la partición, y por último preguntará de qué tamaño será la partición. A las primeras 3 particiones se les asignará el tamaño de 1 GiB.
 Ejemplo partición 1 física:
 
@@ -85,14 +85,14 @@ Esta será la más grande, y podrá contener varias particiones lógicas dentro 
 ![Imagen18](imgs/Imagen18.png)
 
 Impresión de fdisk -l de /dev/sdb ya con las 4 particiones creadas. 
-## Paso 8
+## Paso 8 Crear una partición dentro de la partición extendida de la usb en terminal.
 Parar el paso 8, volveremos a utilizar fdisk. El comando automáticamente nos dejará poner una partición lógica a lo largo de la partición extendida que hemos creado. 
 
 ![Imagen19](imgs/Imagen19.png)
 
 Se puede observar como el comando automáticamente detecta la partición lógica. 
 
-## Paso 9
+## Paso 9 En la interfaz gráfica de la aplicación disks, borrar las particiones para que solo exista una partición que abarque toda la usb. 
 Para el punto 9 se utilizará la herramienta disks de Ubuntu, la cual nos permite modificar las particiones utilizando una aplicación de interfaz gráfica. 
 
 ![Imagen21](imgs/Imagen21.png)
@@ -110,7 +110,7 @@ Repetimos el proceso con cada partición hasta que no quede ninguna.
 Y se vuelve a crear una partición física que abarque todo el tamaño de la USB.
 
 
-## Paso 10
+## Paso 10 Copiar un archivo .iso de distribución live de linux a la usb por medio del comando "dd".
 Para este paso descargaremos un .iso de Ubuntu desde su página oficial. 
 
 ![Imagen23](imgs/Imagen23.png)
