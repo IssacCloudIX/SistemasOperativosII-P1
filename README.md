@@ -29,11 +29,14 @@ Para desmontarla, ocupamos el siguiente comando:
 umount /dev/sdb
 ```
 donde /dev/sdb es la dirección del dispositivo de bloque que contiene montado al usb.
+En la captura se observa el comando umount /dev/sdb utilizado.
 
 ![Imagen2](imgs/Imagen2.png)
-Comando umount /dev/sdb utilizado.
+
+En la captura se observa la salida de lsblk después de desmontar la usb. 
+
 ![Imagen3](imgs/Imagen3.png)
-Salida de lsblk después de desmontar la usb. 
+
 Para montar la usb, necesitamos crear una carpeta la cual contendrá los archivos necesarios. Crearemos una carpeta en el home, llamada USB, la cual contendrá otra carpeta llamada USBPart. Ahí serán guardados los archivos de bloque. 
 
 ![Imagen4](imgs/Imagen5.png)
