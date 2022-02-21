@@ -1,8 +1,7 @@
 # SistemasOperativosII-P1
 Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particionar una USB.
 
-
-## Paso 1 Diferences entre hda, sda y vda. ¿Qué significa la letra y el número al final de los identificadores?
+## Paso 1 Diferencias entre hda, sda y vda. ¿Qué significa la letra y el número al final de los identificadores?
 Las letras sd, hd y vd indican el tipo de puerto que está utilizando la unidad de almacenamiento:
 
 SD: Se refiere a los dispositivos que están utilizando el puerto USB, o discos duros que utilizan el puerto SATA. También se puede referir a dispositivos que utilizan la conexión SCSI, un estándar de transferencia de datos utilizado en RAIDs pero que ha sido reemplazado en gran medida por el puerto SATA.
@@ -17,13 +16,19 @@ Y, por último, el número al final se refiere al número de partición de esa u
 
 ## Paso 2 ¿Cómo montar y desmontar una usb en el sistema por terminal?
 Para montar y desmontar una usb, se utilizan los comandos mount y umount respectivamente. 
-Al conectar nuestra usb ubuntu la monta automáticamente. En la imagen se puede observar la salida del comando lsblk, donde se ve que se encuentra montado el archivo sdb. 
+Al conectar nuestra usb ubuntu la monta automáticamente. En la imagen se puede observar la salida del comando lsblk, donde se ve que se encuentra montado el archivo sdb. El comando 
+```bash
+lsblk
+```
+muestra toda la información de los dispositivos de bloque, incluso aquellos que no están montados. 
 
 ![Imagen1](imgs/Imagen1.png)
 
 Para desmontarla, ocupamos el siguiente comando:
+```bash
 umount /dev/sdb
-donde /dev/sdb es la dirección del archivo bloque que contiene montado al usb.
+```
+donde /dev/sdb es la dirección del dispositivo de bloque que contiene montado al usb.
 
 ![Imagen2](imgs/Imagen2.png)
 Comando umount /dev/sdb utilizado.
