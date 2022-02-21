@@ -33,11 +33,15 @@ Cambiar aquí !
 
 ![Imagen8](imgs/Imagen8.png)
 
+![Imagen9](imgs/Imagen9.png)
 ## Paso 4
 Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
 
-![Imagen9](imgs/Imagen9.png)
 ![Imagen10](imgs/Imagen10.png)
+
+## Paso 5
+Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el archivo de bloques de la USB, para poder observar sus particiones. 
+
 ![Imagen11](imgs/Imagen11.png)
 ![Imagen12](imgs/Imagen12.png)
 ![Imagen13](imgs/Imagen13.png)
