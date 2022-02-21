@@ -26,18 +26,17 @@ Al utilizar el comando mount de esta manera, la carpeta no será creada con todo
 ![Imagen6](imgs/Imagen7.png)
 Uso del comando mount con parámetros adicionales, como se puede observar la carpeta ya cuenta con todos los permisos. 
 
-## Paso 3
-Para el paso 3 se vuelve a desplegar los archivos de bloque, y se mostrarán los archivos incluso los de aquellas unidades que no estén montadas. 
-
-![Imagen7](imgs/Imagen3.png)
-Se puede observar el bloque /dev/sdb aunque no esté montado. 
-
-
-
 
 ![Imagen8](imgs/Imagen8.png)
 
 ![Imagen9](imgs/Imagen9.png)
+
+## Paso 3 Puede cambiar. 
+Para el paso 3 se vuelve a desplegar los archivos de bloque, y se mostrarán los archivos incluso los de aquellas unidades que no estén montadas. 
+
+![Imagen7](imgs/Imagen3.png) 
+Se puede observar el bloque /dev/sdb aunque no esté montado. 
+
 ## Paso 4
 Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
 
