@@ -5,7 +5,7 @@ Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particio
 Para montar y desmontar una usb, se utilizan los comandos mount y umount respectivamente. 
 Al conectar nuestra usb ubuntu la monta automáticamente. En la imagen se puede observar la salida del comando lsblk, donde se ve que se encuentra montado el archivo sdb. 
 
-![PrimeraImagen](PrimeraImagen.png)
+![PrimeraImagen](imgs/1Imagen.png)
 
 ## Paso 3
 
