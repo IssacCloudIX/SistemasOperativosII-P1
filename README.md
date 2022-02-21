@@ -143,6 +143,7 @@ Se puede observar como el comando automáticamente detecta la partición lógica
 
 ## Paso 9 En la interfaz gráfica de la aplicación disks, borrar las particiones para que solo exista una partición que abarque toda la usb. 
 Para el punto 9 se utilizará la herramienta disks de Ubuntu, la cual nos permite modificar las particiones utilizando una aplicación de interfaz gráfica. 
+Primero, se debe seleccionar la USB en la lista de dispositivos de izquierda. 
 
 ![Imagen21](imgs/Imagen21.png)
 
