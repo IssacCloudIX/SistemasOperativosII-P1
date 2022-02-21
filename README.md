@@ -80,16 +80,16 @@ En la captura se puede observar el bloque /dev/sdb aunque no esté montado.
 ## Paso 4 Mostrar la tabla de particiones del disco donde está instalado el sistema operativo en terminal.
 Para este paso, utilizamos el comando 
 ```bash
-fdisk -l /dev/sda
+sudo fdisk -l /dev/sda
 ```
-donde se le agrega una -l porque de no hacerlo activaríamos el asistente por consola de particiones, y nosotros solo queremos enlistar la información de las particiones. Además se agrega el dispositivo del cual queremos su información, en este caso es el disco duro principal donde está el sistema operativo. 
+donde se le agrega una -l porque de no hacerlo activaríamos el asistente por consola de particiones, y nosotros solo queremos enlistar la información de las particiones. De igual manera, se debe ejecutar con permisos de super usuario. Además se agrega el dispositivo del cual queremos su información, en este caso es el disco duro principal donde está el sistema operativo. 
 
 En la captura se observa la información desplegada por el comando. 
 
 ![Imagen10](imgs/Imagen4.png)
 
 ## Paso 5 Conectar una memoria usb y mostrar su tabla de particiones en terminal. (Hacer respaldo antes porque se borrará toda la información dentro de la usb en pasos posteriores)
-Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el dispositivo USB, para poder observar sus particiones. 
+Para el paso 5 volveremos a utilizar el comando sudo fdisk -l, pero ahora le pasaremos el dispositivo USB, para poder observar sus particiones. 
 
 ![Imagen11](imgs/Imagen10.png)
 
