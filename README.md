@@ -170,7 +170,7 @@ Para copiarlo a nuestra usb, utilizaremos el comando dd de la siguiente manera:
 Sudo dd if=ubuntu.20.04.3-desktop-amd64.iso of=/dev/sdb bs=1M status=progress
 ```
 El comando dd es utilizado para copiar archivos entre unidades.
-El parámetro if se refiere a que archivo queremos copiar, el archivo of se refiere al dispositivo donde queremos que se copie el archivo; bs se refiere al tamaño de bloque de tanto el archivo de entrada como el de salida, y status=progress nos permite dejar ver el progreso de la transferencia de datos. 
+El parámetro if se refiere a donde está el archivo que queremos copiar, el archivo of se refiere al dispositivo donde queremos que se copie el archivo; bs se refiere al tamaño de bloque de tanto el archivo de entrada como el de salida, y status=progress nos permite dejar ver el progreso de la transferencia de datos. 
 
 ![Imagen24](imgs/Imagen24.png)
 
