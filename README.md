@@ -20,7 +20,7 @@ Al conectar nuestra usb ubuntu la monta automáticamente. En la imagen se puede 
 ```bash
 lsblk
 ```
-muestra toda la información de los dispositivos de bloque, incluso aquellos que no están montados. 
+muestra toda la información de los dispositivos de bloque, incluso aquellos que no están montados. Em la columna MOUNTPOINT sale la ubicación de donde está montado el dispositivo, si no hay nada quiere decir que el dispositivo no está montado. 
 
 ![Imagen1](imgs/Imagen1.png)
 
@@ -37,17 +37,34 @@ En la captura se observa la salida de lsblk después de desmontar la usb.
 
 ![Imagen3](imgs/Imagen3.png)
 
-Para montar la usb, necesitamos crear una carpeta la cual contendrá los archivos necesarios. Crearemos una carpeta en el home, llamada USB, la cual contendrá otra carpeta llamada USBPart. Ahí serán guardados los archivos de bloque. 
+Para montar la usb, necesitamos crear una carpeta la cual contendrá los archivos necesarios. Crearemos una carpeta en el home, llamada USB, la cual contendrá otra carpeta llamada USPart. Ahí serán guardados los archivos necesarios para montarla. 
+
+En la captura se observa como creamos las carpetas necesarias.   
 
 ![Imagen4](imgs/Imagen5.png)
-Creación de la carpeta. 
+
+Se utilizó el comando: 
+
+```bash
+sudo mount -t exfat /dev/sdb ./USPart
+```
+el cual es necesario ejecutar con sudo pues se necesitan permisos de super usuario ya que estos comandos modifican directamente el hardware. El comando necesita el sistema de archivos del dispositivo, su archivo de bloque y la dirección donde se desea montar. 
+
 ![Imagen5](imgs/Imagen6.png)
-Uso del comando mount, el cual es necesario ejecutar con sudo pues se necesitan permisos de super usuario ya que estos comandos modifican directamente el hardware. 
-Al utilizar el comando mount de esta manera, la carpeta no será creada con todos los permisos disponibles para el usuario. Para poder obtener todos los permisos, hay que desmontar la USB, se debe utilizar el umask, y volver a ejecutar el comando mount con parámetros adicionales. 
+
+Al utilizar el comando mount de esta manera, la carpeta no será creada con todos los permisos disponibles para el usuario. Para poder obtener todos los permisos, hay que desmontar la USB y se debe utilizar el umask, el cual nos dará acceso a dar todos los permisos a los usuarios cuando montemos la USB.
+
+El comando ahora sería este: 
+```bash
+sudo mount -t exfat -o rw,umask=0 /dev/sdb ./USPart
+```
+
+donde ahora se le agrega un -o para tener comandos adicionales, y se le agrega rw,umask=0 para dar todos los permisos. 
+En la captura se ve el uso del comando mount con parámetros adicionales. 
 
 ![Imagen6](imgs/Imagen7.png)
-Uso del comando mount con parámetros adicionales, como se puede observar la carpeta ya cuenta con todos los permisos. 
 
+Como se puede observar la carpeta ya cuenta con todos los permisos. 
 
 ![Imagen8](imgs/Imagen8.png)
 
