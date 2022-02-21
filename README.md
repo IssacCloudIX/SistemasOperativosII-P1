@@ -177,5 +177,7 @@ Se empezará a copiar el .iso a la USB, por lo que en este paso solo queda esper
 #Referencias
 
 https://www.makeareadme.com/#authors-and-acknowledgment
+
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 https://frameboxxindore.com/linux/what-is-dev-sda-in-linux.html
