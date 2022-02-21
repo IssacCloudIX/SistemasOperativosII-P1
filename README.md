@@ -61,11 +61,23 @@ Se muestra la salida del comando fdisk -l después de borrar las particiones, y 
 
 ![Imagen13](imgs/Imagen13.png)
 
+## Paso 7
+Para este paso, de igual manera utilizaremos el comando fdisk. Ahora en lugar de utilizar la letra d, utilizaremos la letra n, la cual preguntará que tipo de partición queremos crear. Para crear una primaria (física) se debe escribir la letra p, para crear una extendida se debe escribir una letra e. Después nos preguntará el número de partición, los cuales irán del 1 al 4. Después preguntará el sector donde comenzará la partición, y por último preguntará de qué tamaño será la partición. A las primeras 3 particiones se les asignará el tamaño de 1 GiB.
+Ejemplo partición 1 física:
 
 
 ![Imagen14](imgs/Imagen14.png)
+
+Ejemplo partición 2:
+
 ![Imagen15](imgs/Imagen15.png)
+
+Ejemplo partición 3:
+
 ![Imagen16](imgs/Imagen16.png)
+
+Ejemplo partición 4 (extendida):
+
 ![Imagen17](imgs/Imagen17.png)
 ![Imagen18](imgs/Imagen18.png)
 ![Imagen19](imgs/Imagen19.png)
