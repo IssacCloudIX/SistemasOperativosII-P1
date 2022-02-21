@@ -92,14 +92,15 @@ Parar el paso 8, volveremos a utilizar fdisk. El comando automáticamente nos de
 
 Se puede observar como el comando automáticamente detecta la partición lógica. 
 
-![Imagen20](imgs/Imagen20.png)
-
 ## Paso 9
 Para el punto 9 se utilizará la herramienta disks de Ubuntu, la cual nos permite modificar las particiones utilizando una aplicación de interfaz gráfica. 
 
 ![Imagen21](imgs/Imagen21.png)
 
 Se presionará el botón menos debajo de la partición para eliminarla.
+
+![Imagen21](imgs/Imagen20.png)
+
 
 ![Imagen22](imgs/Imagen22.png)
 
