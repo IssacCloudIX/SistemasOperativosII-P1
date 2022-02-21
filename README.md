@@ -101,15 +101,16 @@ Se presionará el botón menos debajo de la partición para eliminarla.
 
 ![Imagen21](imgs/Imagen20.png)
 
-
-![Imagen22](imgs/Imagen22.png)
-
 Pedirá confirmación y le damos en delete.
 Repetimos el proceso con cada partición hasta que no quede ninguna.
 
-![Imagen23](imgs/Imagen23.png)
+![Imagen22](imgs/Imagen22.png)
+
 
 Y se vuelve a crear una partición física que abarque todo el tamaño de la USB.
+
+![Imagen23](imgs/Imagen23.png)
+
 ## Paso 10
 Para este paso descargaremos un .iso de Ubuntu desde su página oficial. 
 
