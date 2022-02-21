@@ -109,15 +109,18 @@ Repetimos el proceso con cada partición hasta que no quede ninguna.
 
 Y se vuelve a crear una partición física que abarque todo el tamaño de la USB.
 
-![Imagen23](imgs/Imagen23.png)
 
 ## Paso 10
 Para este paso descargaremos un .iso de Ubuntu desde su página oficial. 
 
-![Imagen24](imgs/Imagen24.png)
+![Imagen23](imgs/Imagen23.png)
 
 Para copiarlo a nuestra usb, utilizaremos el comando dd de la siguiente manera: 
 Sudo dd if = /isos/Ubuntu-
+
+![Imagen24](imgs/Imagen24.png)
+
+Se empezará a copiar el .iso a la USB, por lo que en este paso solo queda esperar.
 
 ![Imagen25](imgs/Imagen25.png)
 
