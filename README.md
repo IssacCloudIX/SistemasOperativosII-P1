@@ -79,12 +79,43 @@ Ejemplo partición 3:
 Ejemplo partición 4 (extendida):
 
 ![Imagen17](imgs/Imagen17.png)
+
+Esta será la más grande, y podrá contener varias particiones lógicas dentro de ella. 
+
 ![Imagen18](imgs/Imagen18.png)
+
+Impresión de fdisk -l de /dev/sdb ya con las 4 particiones creadas. 
+## Paso 8
+Parar el paso 8, volveremos a utilizar fdisk. El comando automáticamente nos dejará poner una partición lógica a lo largo de la partición extendida que hemos creado. 
+
 ![Imagen19](imgs/Imagen19.png)
+
+Se puede observar como el comando automáticamente detecta la partición lógica. 
+
 ![Imagen20](imgs/Imagen20.png)
+
+## Paso 9
+Para el punto 9 se utilizará la herramienta disks de Ubuntu, la cual nos permite modificar las particiones utilizando una aplicación de interfaz gráfica. 
+
 ![Imagen21](imgs/Imagen21.png)
+
+Se presionará el botón menos debajo de la partición para eliminarla.
+
 ![Imagen22](imgs/Imagen22.png)
+
+Pedirá confirmación y le damos en delete.
+Repetimos el proceso con cada partición hasta que no quede ninguna.
+
 ![Imagen23](imgs/Imagen23.png)
+
+Y se vuelve a crear una partición física que abarque todo el tamaño de la USB.
+## Paso 10
+Para este paso descargaremos un .iso de Ubuntu desde su página oficial. 
+
 ![Imagen24](imgs/Imagen24.png)
+
+Para copiarlo a nuestra usb, utilizaremos el comando dd de la siguiente manera: 
+Sudo dd if = /isos/Ubuntu-
+
 ![Imagen25](imgs/Imagen25.png)
 
