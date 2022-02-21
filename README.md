@@ -1,4 +1,4 @@
-# SistemasOperativosII-P1
+# SistemasOperativosII-P1 Partición por consola de una memoria USB
 Repositorio de la práctica 1 de Sistemas Operativos II, acerca de como particionar una USB.
 
 ## Paso 1 Diferencias entre hda, sda y vda. ¿Qué significa la letra y el número al final de los identificadores?
