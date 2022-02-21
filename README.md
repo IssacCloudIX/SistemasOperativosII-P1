@@ -178,7 +178,7 @@ Se empezará a copiar el .iso a la USB, por lo que en este paso solo queda esper
 
 ![Imagen25](imgs/Imagen25.png)
 
-#Referencias
+##Referencias
 
 https://www.makeareadme.com/#authors-and-acknowledgment
 
