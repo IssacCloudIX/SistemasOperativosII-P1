@@ -25,12 +25,15 @@ Al utilizar el comando mount de esta manera, la carpeta no será creada con todo
 
 ![Imagen6](imgs/Imagen7.png)
 Uso del comando mount con parámetros adicionales, como se puede observar la carpeta ya cuenta con todos los permisos. 
-![Imagen7](imgs/Imagen4.png)
+
+## Paso 3
+Para el paso 3 se vuelve a desplegar los archivos de bloque, y se mostrarán los archivos incluso los de aquellas unidades que no estén montadas. 
+
+![Imagen7](imgs/Imagen3.png)
 Se puede observar el bloque /dev/sdb aunque no esté montado. 
 
 
-## Paso 3
-Cambiar aquí !
+
 
 ![Imagen8](imgs/Imagen8.png)
 
@@ -38,7 +41,7 @@ Cambiar aquí !
 ## Paso 4
 Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permitirá visualizar las particiones de la unidad sda, la cual es el disco duro virtual donde está contenido el sistema operativo. 
 
-![Imagen10](imgs/Imagen10.png)
+![Imagen10](imgs/Imagen4.png)
 
 ## Paso 5
 Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el archivo de bloques de la USB, para poder observar sus particiones. 
