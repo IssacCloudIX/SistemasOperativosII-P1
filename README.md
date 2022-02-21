@@ -45,19 +45,23 @@ Para este paso,  utilizamos el comando fdisk -l /dev/sda. El comando nos permiti
 ## Paso 5
 Para el paso 5 volveremos a utilizar el comando fdisk -l, pero ahora le pasaremos el archivo de bloques de la USB, para poder observar sus particiones. 
 
-![Imagen11](imgs/Imagen11.png)
+![Imagen11](imgs/Imagen10.png)
 
 ## Paso 6
 Para realizar el paso 6, utilizaremos ahora el comando fdisk sin el -l, pues así esta herramienta nos permitirá modificar las particiones de la USB. 
-Una vez en la herramienta, deberemos presionar la tecla d, y después el número de partición que queremos eliminar. En este caso repetiremos el proceso 4 veces, pues queremos eliminar las 4 particiones. 
+Una vez en la herramienta, deberemos presionar la tecla d, y después el número de partición que queremos eliminar. En este caso repetiremos el proceso 4 veces, pues queremos eliminar las 4 particiones.
+
+![Imagen11](imgs/Imagen11.png)
+
+ Por último, se debe presionar la tecla w para guardar cambios. 
 
 ![Imagen12](imgs/Imagen12.png)
 
-Por último, se debe presionar la tecla w para guardar cambios. 
+Se muestra la salida del comando fdisk -l después de borrar las particiones, y como se puede observar, ya no están. 
 
 ![Imagen13](imgs/Imagen13.png)
 
-Se muestra la salida del comando fdisk -l después de borrar las particiones, y como se puede observar, ya no están. 
+
 
 ![Imagen14](imgs/Imagen14.png)
 ![Imagen15](imgs/Imagen15.png)
