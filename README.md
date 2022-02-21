@@ -126,15 +126,14 @@ Ejemplo partición 3:
 
 ![Imagen16](imgs/Imagen16.png)
 
-Ejemplo partición 4 (extendida):
+Ejemplo partición 4 (extendida): En este caso, el tamaño se indicó usando el sector donde queremos que acabe la partición, por ser la partición extendida, será la más grande, y terminará hasta el último sector de la USB. Así, podrá contener varias particiones lógicas dentro de ella. 
 
 ![Imagen17](imgs/Imagen17.png)
-
-Esta será la más grande, y podrá contener varias particiones lógicas dentro de ella. 
+ 
+Impresión de fdisk -l de /dev/sdb ya con las 4 particiones creadas. 
 
 ![Imagen18](imgs/Imagen18.png)
 
-Impresión de fdisk -l de /dev/sdb ya con las 4 particiones creadas. 
 ## Paso 8 Crear una partición dentro de la partición extendida de la usb en terminal.
 Parar el paso 8, volveremos a utilizar fdisk. El comando automáticamente nos dejará poner una partición lógica a lo largo de la partición extendida que hemos creado. 
 
